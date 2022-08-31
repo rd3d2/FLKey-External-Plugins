@@ -1,3 +1,4 @@
+#from http.client import REQUESTED_RANGE_NOT_SATISFIABLE
 from script.constants import PluginPotParameterType
 from script.native_parameter_regions import NativeParameterRegions
 
@@ -23,7 +24,27 @@ native_plugin_parameters = {
     
     #EXTERNAL PLUGINS:
 
-
+    # Misc Requested 
+     'Sylenth1': [
+        PluginParameter(index=42),
+        PluginParameter(index=45),
+        PluginParameter(index=0),
+        PluginParameter(index=2),
+        PluginParameter(index=61),
+        PluginParameter(index=69),
+        PluginParameter(index=70),
+        PluginParameter(index=68),
+     ],
+     'Serum': [
+        PluginParameter(index=45),
+        PluginParameter(index=46),
+        PluginParameter(index=35),
+        PluginParameter(index=37),
+        PluginParameter(index=218),
+        PluginParameter(index=219),
+        PluginParameter(index=220),
+        PluginParameter(index=221),
+     ],
     #-------------------------
     # ALL FREE PLUGINS FROM
     # COMPUTER MUSIC MAGAZINE
@@ -107,8 +128,189 @@ native_plugin_parameters = {
         PluginParameter(index=110),
         PluginParameter(index=117),
         PluginParameter(index=0),
-    ],   
-    
+    ], 
+    #-------------------------
+    # Spitfire
+    #-------------------------        
+    'BBC Symphony Orchestra': [
+        PluginParameter(index=0),
+        PluginParameter(index=1),
+        PluginParameter(index=2),
+        PluginParameter(index=3), 
+        PluginParameter(index=4), 
+        PluginParameter(index=5), 
+        PluginParameter(index=6), 
+        PluginParameter(index=7,), 
+    ],
+    'Originals - Epic Choir': [
+        PluginParameter(index=0),
+        PluginParameter(index=1),
+        PluginParameter(index=2),
+        PluginParameter(index=8),
+        PluginParameter(index=9),
+        PluginParameter(index=10),
+        PluginParameter(index=4),
+        PluginParameter(index=3),
+      ],
+      'LABS': [
+        PluginParameter(index=0),
+        PluginParameter(index=1),
+        PluginParameter(index=2),
+        PluginParameter(index=3),
+        PluginParameter(index=4),
+        PluginParameter(index=20),
+        PluginParameter(index=21),
+        PluginParameter(index=12),
+      ],
+    #-------------------------
+    # BLEASS: (Free)
+    #-------------------------        
+      'BLEASS Monolit': [
+        PluginParameter(index=62),
+        PluginParameter(index=63),
+        PluginParameter(index=47),
+        PluginParameter(index=50),
+        PluginParameter(index=6),
+        PluginParameter(index=39),
+        PluginParameter(index=43),
+        PluginParameter(index=0),
+      ],
+    #-------------------------
+    # : FabFilter
+    #-------------------------        
+      'One': [
+        PluginParameter(index=5),
+        PluginParameter(index=6),
+        PluginParameter(index=3),
+        PluginParameter(index=7),
+        PluginParameter(index=10),
+        PluginParameter(index=22),
+        PluginParameter(index=3),
+        PluginParameter(index=24),
+      ],
+    #-------------------------
+    # GForce: 
+    #-------------------------        
+    'SEM': [
+        PluginParameter(index=12),
+        PluginParameter(index=13),
+        PluginParameter(index=18),
+        PluginParameter(index=19),
+        PluginParameter(index=66),
+        PluginParameter(index=89),
+        PluginParameter(index=90),
+        PluginParameter(index=87),
+      ],      
+    'Oddity 2': [
+        PluginParameter(index=494),
+        PluginParameter(index=509),
+        PluginParameter(index=149),
+        PluginParameter(index=194),
+        PluginParameter(index=69),
+        PluginParameter(index=637, name="Delay Amount"),
+        PluginParameter(index=682, name="Delay Feedback"),
+        PluginParameter(index=600, name="Volume"),
+    ],
+    #-------------------------
+    # Reverb Synth Collection:
+    # (Free)
+    #-------------------------        
+      'PG-8X': [
+        PluginParameter(index=20),
+        PluginParameter(index=21),
+        PluginParameter(index=35),
+        PluginParameter(index=38),
+        PluginParameter(index=45),
+        PluginParameter(index=1,name="Waveform"),
+        PluginParameter(index=30,name="Chorus"),
+        PluginParameter(index=27),
+      ],
+      'Crystal': [
+        PluginParameter(index=44),
+        PluginParameter(index=39),
+        PluginParameter(index=45),
+        PluginParameter(index=145),
+        PluginParameter(index=50),
+        PluginParameter(index=475,name="D1 Time"),
+        PluginParameter(index=476,name="D1 Feedback"),
+        PluginParameter(index=526,name="Voice1 Level"),
+      ],
+    #-------------------------
+    # Softube
+    #-------------------------
+
+      'Model 72 Synthesizer System': [
+        PluginParameter(index=29),
+        PluginParameter(index=30),
+        PluginParameter(index=38),
+        PluginParameter(index=39),
+        PluginParameter(index=6),
+        PluginParameter(index=10),
+        PluginParameter(index=12),
+        PluginParameter(index=41),
+      ],
+
+      'Model 84 Polyphonic Synthesizer': [
+        PluginParameter(index=10),
+        PluginParameter(index=11),
+        PluginParameter(index=18),
+        PluginParameter(index=21),
+        PluginParameter(index=28),
+        PluginParameter(index=23),
+        PluginParameter(index=22),
+        PluginParameter(index=31),
+      ],
+      
+    #-------------------------
+    # FLKEY MINI & 37
+    # FREE INSTRUMENTS - AAA
+    #-------------------------
+
+     'Lounge Lizard Session 4': [
+        PluginParameter(index=0, name="Noise"),
+        PluginParameter(index=1, name = "Tine Bar"),
+        PluginParameter(index=2, name="Tone Amp"), 
+        PluginParameter(index=3, name="Symmetry"),
+        PluginParameter(index=22, name="Character"),
+        PluginParameter(index=4, name="Tremelo Rate"),
+        PluginParameter(index=5, name="tremelo Depth"),
+        PluginParameter(index=20, name="Level"),
+    ],
+     'Strum Session 2': [
+        PluginParameter(index=0, name="Play Mode"),
+        PluginParameter(index=1, name="Clock Rate"),
+        PluginParameter(index=2, name="Mod Depth"), 
+        PluginParameter(index=3, name="Mod Speed"),
+        PluginParameter(index=5, name="Strum Speed"),
+        PluginParameter(index=6, name="Strum Velocity"),
+        PluginParameter(index=53, name="Reverb"),
+        PluginParameter(index=55, name="level"),
+    ],        
+     'Ultra Analog Session 2': [
+        PluginParameter(index=7, name="Frequency"),
+        PluginParameter(index=6, name="Resonance"),
+        PluginParameter(index=10, name="Attack"), 
+        PluginParameter(index=13, name="Release"),
+        PluginParameter(index=2, name="Pulse Width"),
+        PluginParameter(index=39, name="Effect On/Off"),
+        PluginParameter(index=40, name="Effect Type"),
+        PluginParameter(index=37, name="Volume"),
+    ],
+    #-------------------------
+    # APPLIED ACOUSTICS
+    #-------------------------
+
+     'Ultra Analog VA-3': [
+        PluginParameter(index=0),
+        PluginParameter(index=1),
+        PluginParameter(index=2),
+        PluginParameter(index=3),
+        PluginParameter(index=4),
+        PluginParameter(index=5),
+        PluginParameter(index=6),
+        PluginParameter(index=7),
+    ],
+     
     #-------------------------
     # BEST FREE PLUGINS FROM
     # COMPUTER MUSIC MAGAZINE
@@ -155,9 +357,9 @@ native_plugin_parameters = {
         PluginParameter(index=92),
         PluginParameter(index=93),
         PluginParameter(index=94),
-        PluginParameter(index=999),
-        PluginParameter(index=999),
-        PluginParameter(index=89, name="Volume"),
+        PluginParameter(index=166),
+        PluginParameter(index=168),
+        PluginParameter(index=89),
     ],
     'JUPITER-8': [
         PluginParameter(index=21),
@@ -189,7 +391,26 @@ native_plugin_parameters = {
         PluginParameter(index=27),
         PluginParameter(index=35), 
     ],
-    
+    'SYSTEM-1': [
+        PluginParameter(index=29),
+        PluginParameter(index=31),
+        PluginParameter(index=39),
+        PluginParameter(index=42),
+        PluginParameter(index=52),
+        PluginParameter(index=45),
+        PluginParameter(index=46),
+        PluginParameter(index=47,name="Delay Time"), #no level?
+    ],
+    'JUPITER-4': [
+        PluginParameter(index=13),
+        PluginParameter(index=14),
+        PluginParameter(index=22),
+        PluginParameter(index=25),
+        PluginParameter(index=2),
+        PluginParameter(index=51,name="Effect Type"),
+        PluginParameter(index=27,name="Effect Depth"),
+        PluginParameter(index=37,name="VCA Level"), 
+    ],    
     #---------
     # Arturia:
     #---------
@@ -204,7 +425,7 @@ native_plugin_parameters = {
         PluginParameter(index=999),
         PluginParameter(index=114),
     ],
-         'Jup-8 V3': [
+    'Jup-8 V3': [
         PluginParameter(index=12),
         PluginParameter(index=13),
         PluginParameter(index=25),
@@ -214,7 +435,7 @@ native_plugin_parameters = {
         PluginParameter(index=999),
         PluginParameter(index=204),
     ],
-         'CMI V': [
+    'CMI V': [
         PluginParameter(index=6),
         PluginParameter(index=7),
         PluginParameter(index=5),
@@ -224,7 +445,7 @@ native_plugin_parameters = {
         PluginParameter(index=999),
         PluginParameter(index=20),
     ],
-         'Mini V3': [
+    'Mini V3': [
         PluginParameter(index=23),
         PluginParameter(index=24),
         PluginParameter(index=26),
@@ -234,7 +455,7 @@ native_plugin_parameters = {
         PluginParameter(index=999),
         PluginParameter(index=0),
     ],
-         'Piano V2': [
+    'Piano V2': [
         PluginParameter(index=77),
         PluginParameter(index=8),
         PluginParameter(index=76),
@@ -244,7 +465,7 @@ native_plugin_parameters = {
         PluginParameter(index=36),
         PluginParameter(index=0),
     ],
-         'Prophet V3': [
+    'Prophet V3': [
         PluginParameter(index=17),
         PluginParameter(index=19),
         PluginParameter(index=24),
@@ -254,7 +475,7 @@ native_plugin_parameters = {
         PluginParameter(index=999),
         PluginParameter(index=105),
     ],
-         'Stage-73 V': [
+    'Stage-73 V': [
         PluginParameter(index=0),
         PluginParameter(index=0),
         PluginParameter(index=0),
@@ -341,16 +562,6 @@ native_plugin_parameters = {
         PluginParameter(index=999),
         PluginParameter(index=999),
         PluginParameter(index=16, name="Volume"),    ],
-    'BBC Symphony Orchestra': [
-        PluginParameter(index=0),
-        PluginParameter(index=1),
-        PluginParameter(index=2),
-        PluginParameter(index=3), #?
-        PluginParameter(index=4), #?
-        PluginParameter(index=5), #?
-        PluginParameter(index=6), #?
-        PluginParameter(index=7,), #?
-    ],
      'Generic': [
         PluginParameter(index=90),
         PluginParameter(index=91),
@@ -364,7 +575,16 @@ native_plugin_parameters = {
     #--------------'
     # Cherry Audio:
     #---------------
-
+     'Elka-X': [
+        PluginParameter(index=73),
+        PluginParameter(index=74),
+        PluginParameter(index=82,name="Upper Attack"),
+        PluginParameter(index=85, name="Upper Release"),
+        PluginParameter(index=147),
+        PluginParameter(index=123),
+        PluginParameter(index=130),
+        PluginParameter(index=134, name="Volume"),
+    ],
      'DCO-106': [
         PluginParameter(index=15),
         PluginParameter(index=16),
@@ -425,17 +645,16 @@ native_plugin_parameters = {
         PluginParameter(index=123,name="Reverb"),
         PluginParameter(index=143, name="Tune"),
     ],
-    'Oddity 2': [
-        PluginParameter(index=494),
-        PluginParameter(index=509),
-        PluginParameter(index=149),
-        PluginParameter(index=194),
-        PluginParameter(index=69),
-        PluginParameter(index=637, name="Delay Amount"),
-        PluginParameter(index=682, name="Delay Feedback"),
-        PluginParameter(index=600, name="Volume"),
+    'Lowdown': [
+        PluginParameter(index=15),
+        PluginParameter(index=11,name="Emphasis"),
+        PluginParameter(index=7),
+        PluginParameter(index=9),
+        PluginParameter(index=6),
+        PluginParameter(index=16, name="Presets"),
+        PluginParameter(index=20, name="Glide Enable"),
+        PluginParameter(index=0, name="Volume"),
     ],
-
     #==================
     #INTERNAL PLUGINS:
     #==================
@@ -799,7 +1018,17 @@ native_plugin_parameters = {
         PluginParameter(index=17, name="Mod 2 Decay"),
         PluginParameter(index=14, name="Mod 2 Coarse"),
     ],
-    'Autogun': [
+    'DX10 VSTi': [
+        PluginParameter(index=11, name="Waveform"),
+        PluginParameter(index=21, name="Coarse"),
+        PluginParameter(index=5, name="Mod 1 Init"),
+        PluginParameter(index=6, name="Mod 1 Decay"),
+        PluginParameter(index=3, name="Mod 1 Coarse"),
+        PluginParameter(index=16, name="Mod 2 Init"),
+        PluginParameter(index=17, name="Mod 2 Decay"),
+        PluginParameter(index=14, name="Mod 2 Coarse"),
+    ],    
+                                                        'Autogun': [
         PluginParameter(index=0, name="Master Level")
     ]
 }
